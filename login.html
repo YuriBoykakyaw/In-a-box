@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  img {
+  border-radius: 8px;
+}
+  * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+  a {
+   text-shadow: 2px 2px 5px yellow;
+}
+footer{
+  color:  red;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-youtube {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #dd4b39;
+  color: white;
+}
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+</style>
+<style type ="text/css">
+</head>
+</style>
+<body style="background-color: skyblue;">
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-sm">
+    <a style="color:red;" class="navbar-brand" href="#">In a box</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+       <li class="nav-item">
+          <a  style="color:red;" class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a style="color:red;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Service and product offered
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Recipe guide.html">Recipe guides</a></li>
+            <li><a class="dropdown-item" href="Bakeathomeset.html">Bake at home set</a></li>
+            <li><a class="dropdown-item" href="Ingredients.html">Ingredients</a></li>
+            <li><a class="dropdown-item" href="OtherItem.html">Other Items</a></li>
+          </ul>
+        </li>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a  style="color:red;" class="nav-link" href="Packageoffered.html">Package offered</a>
+        </li>
+          </ul>
+        <li class="nav-item">
+          <a  style="color:red;" class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+         <a href="signup.html" class="btn btn-primary" style="background: red;">Sign up</a>
+        <a href="login.html" class="btn btn-primary" style="background: red;">Login</a>
+        </li>
+      </form>
+    </div>
+</nav><br><br><br>
+<section class="vh-100">
+  <div class="container py-5 h-100">
+    <div class="row d-flex align-items-center justify-content-center h-100">
+      <div class="col-md-8 col-lg-7 col-xl-6">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+          class="img-fluid" alt="Phone image">
+      </div>
+      <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+        <form>
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input type="email" id="form1Example13" class="form-control form-control-lg" />
+            <label class="form-label" for="form1Example13">Email address</label>
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-4">
+            <input type="password" id="form1Example23" class="form-control form-control-lg" />
+            <label class="form-label" for="form1Example23">Password</label>
+          </div>
+
+          <div class="d-flex justify-content-around align-items-center mb-4">
+            <!-- Checkbox -->
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+              <label class="form-check-label" for="form1Example3"> Remember me </label>
+            </div>
+            <a href="https://apps.who.int/healthinfo/systems/surveydata/index.php/auth/forgot_password">Forgot password?</a>
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+
+          <div class="divider d-flex align-items-center my-4">
+            <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+          </div>
+
+          <a class="btn btn-primary btn-lg btn-block" style="background-color: #3b5998" href="https://www.facebook.com/"
+            role="button">
+            <i class="fab fa-facebook-f me-2" href="#!"></i>Continue with Facebook
+          </a>
+          <a class="btn btn-primary btn-lg btn-block" style="background-color: #55acee" href="https://twitter.com/?lang=en"
+            role="button">
+            <i class="fab fa-twitter me-2"></i>Continue with Twitter</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+ <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><b href="#" class="nav-link px-2 text-muted">Home</b></li>
+      <li class="nav-item"><b href="#" class="nav-link px-2 text-muted">Service and product </b></li>
+      <li class="nav-item"><b href="#" class="nav-link px-2 text-muted">Industries</b></li>
+      <li  class="nav-item"><b href="#" class="nav-link px-2 text-muted">Package </b></li>
+      <li class="nav-item"><b href="#" class="nav-link px-2 text-muted">About</b></li>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </ul>
+    <p class="text-center text-muted">© 2021 Company, Inc</p>
+  </footer>
+  </body>
+</html>

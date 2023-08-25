@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Beginner</title>
+  <style>
+    body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -1000px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+    a {
+   text-shadow: 2px 2px 5px yellow;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-youtube {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #dd4b39;
+  color: white;
+}
+</style>
+<style type ="text/css">
+</head>
+</style>
+<body>
+  <a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-sm">
+    <a style="color:red;" class="navbar-brand" href="#">In a box</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a  style="color:red;" class="nav-link active" aria-current="page" href="Home.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a style="color:red;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Service and product offered
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Recipe guide.html">Recipe guides</a></li>
+            <li><a class="dropdown-item" href="#">Bake at home set</a></li>
+            <li><a class="dropdown-item" href="#">Ingredients</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a style="color:red;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Industries
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Video</a></li>
+            <li><a class="dropdown-item" href="#">Retail</a></li>
+            <li><a class="dropdown-item" href="#">Manufacturing</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a style="color:red;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Package offered
+          </a>
+          <ul  class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a style="color:red;" class="dropdown-item" href="Beginner.html">Beginners</a></li>
+            <li><a style="color:red" class="dropdown-item" href="#">Everyday</a></li>
+            <li><a style="color:red;" class="dropdown-item" href="#">Deluxe</a></li>
+            <li><a style="color:red;" class="dropdown-item" href="#">Custom</a></li>
+          </ul>
+        <li class="nav-item">
+          <a  style="color:red;" class="nav-link" href="#">About</a>
+        </li>
+        
+        <li  class="nav-item dropdown">
+          <a style="color:red;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a  style="color:red;"class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button style="color:red;"class="btn btn-outline-success" type="submit">Search</button>
+           <button style="color:red;" class="btn btn-outline-success" type="submit">Login</button>
+        </li>
+      </form>
+    </div>
+</nav>
+<style>
+div.gallery {
+  margin: 25px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 240px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 240px;
+  height: 160px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<body style="background-color:yellow;">
+</head>
+<body>
+  <br><br><br>
+  <h1 style="text-align:center;">Standard Weekly Recipes</h1>
+  <p3 style="text-align:center;"> If you are looking for inspiration to create a weekly meal plan, you are in the right place! 
+
+Each week I share a meal plan that is packed with easy to make recipes, with variety, AND I try to repurpose leftovers from at least one meal each and every week to minimize time spent in the kitchen and maximize time spent enjoying life! 
+
+A new meal plan comes out each Friday, so stay tuned or pin it here to save it!</p3>
+<br><br><br>
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 15</div>
+    <img src="Images/food1.jpg" style="width:50">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 15</div>
+    <img src="Images/food4.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 15</div>
+    <img src="Images/food5.jpg" style="width:50%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 15</div>
+    <img src="Images/k2.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 15</div>
+    <img src="Images/food13.jpg" style="width:50%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 15</div>
+    <img src="Images/food11.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 15</div>
+    <img src="Images/pizza2.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">8 / 15</div>
+    <img src="Images/food3.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">9 / 15</div>
+    <img src="Images/food7.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">10 / 15</div>
+    <img src="Images/food.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">11 / 15</div>
+    <img src="Images/food6.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">12 / 15</div>
+    <img src="Images/food8.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">13 / 15</div>
+    <img src="Images/food14.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">14 / 15</div>
+    <img src="Images/k3.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">15 / 15</div>
+    <img src="Images/food9.jpg" style="width:50%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Images/food1.jpg" style="width:90%" onclick="currentSlide(1)" alt="Kimchi">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/food4.jpg" style="width:90%" onclick="currentSlide(2)" alt="Samosa">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/food5.jpg" style="width:90%" onclick="currentSlide(3)" alt="Mohinga">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/k2.jpg" style="width:90%" onclick="currentSlide(4)" alt="Cheeseburger">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/food13.jpg" style="width:90%" onclick="currentSlide(5)" alt="Pork Chops">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="Images/food11.jpg" style="width:90%" onclick="currentSlide(6)" alt="Grilled chicken leg">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/pizza2.jpg" style="width:90%" onclick="currentSlide(7)" alt="pizza">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/food3.jpg" style="width:90%" onclick="currentSlide(8)" alt="Hacksteak">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/food7.jpg" style="width:90%" onclick="currentSlide(9)" alt="Royal Salad">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/food.jpg" style="width:90%" onclick="currentSlide(10)" alt="Quesadilla">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/food6.jpg" style="width:90%" onclick="currentSlide(11)" alt="Noodle Salad">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/food8.jpg" style="width:90%" onclick="currentSlide(12)" alt="Ice-Cream">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/food14.jpg" style="width:90%" onclick="currentSlide(13)" alt="Mount Lone Raypaw">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/k3.jpg" style="width:90%" onclick="currentSlide(14)" alt="Hurricane roll">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/food9.jpg" style="width:90%" onclick="currentSlide(15)" alt="Cookies">
+    </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<br><br>
+ <h2 style="text-align:center;">Bake at home set</h2>
+<img src="Images/bake.jpg" class="center" style="width:50%">
+<p4>For cookies, baking until just set means that the edges of the cookie should be slightly firm or dry to the touch and the top of the cookie should no longer look wet. In other words, it shouldn't still feel like raw cookie dough if you gently touch it with your finger.</p4><br><br><br>
+
+<h2 style="text-align:center;">Nutritional Information App</h2>
+<img src="Images/Nutri.jpg" class="center" style="width:30%">
+<p5>Nutrition apps can help people live a healthier lifestyle by enabling them to track which products they are buying, or suggesting particular restaurants for their dietary needs. Eating healthily is not always easy, especially when eating out, trying to cook new recipes, or managing the demands of a busy life.</p5><br><br><br>
+<h2 style="text-align:center;">Special Occasion Gift Box</h2>
+<img src="Images/Box.jpg" class="center" style="width:30%">
+<p6>In addition to this function as an empty box for the packaging experience, our gift boxes are still used in retail stores as classic gift packaging. Especially high-quality goods such as clothes, perfume or games are often bought by customers as gifts and can be packed directly in the shop with the gift boxes.</p6>
+<footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><b href="#" class="nav-link px-2 text-muted">Home</b></li>
+      <li class="nav-item"><b href="#" class="nav-link px-2 text-muted">Service and product </b></li>
+      <li class="nav-item"><b href="#" class="nav-link px-2 text-muted">Industries</b></li>
+      <li  class="nav-item"><b href="#" class="nav-link px-2 text-muted">Package </b></li>
+      <li class="nav-item"><b href="#" class="nav-link px-2 text-muted">About</b></li>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </ul>
+    <p class="text-center text-muted">© 2021 Company, Inc</p>
+  </footer>
+</body>
+</html>
